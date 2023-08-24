@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $colorFondo !important;
+    font-family: $tipografia;
+    font-size: 21px;
+    color: $colorTipografia;
+}
