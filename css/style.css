@@ -9,15 +9,34 @@ html {
 }
 
 body {
-  background: #27272A !important;
+  background: #27272A;
   font-family: "Barlow", sans-serif;
   font-size: 21px;
   color: #FFF7F8;
 }
 
-nav div a img {
-  width: 2.5em;
+.navbar {
+  background-color: #27272A;
+  color: #FFF7F8;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navLogo img {
+  width: 25px;
   height: auto;
+}
+.navbar .navItems a {
+  margin: 15px;
+  color: #FFF7F8;
+  text-decoration: none;
+}
+.navbar .navItems a li {
+  list-style-type: none;
+}
+.navbar .navToggle {
+  display: none;
 }
 
 header img {
