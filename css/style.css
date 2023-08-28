@@ -26,7 +26,7 @@ header {
 header .abrirMenu, header .cerrarMenu {
   background-color: transparent;
   border: 0;
-  font-size: 1.25rem;
+  font-size: 2.3rem;
   color: #FFF7F8;
 }
 header .navLogo {
@@ -90,11 +90,41 @@ header .nav.visible {
     margin: 8px;
   }
 }
-.encabezado img {
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: 8px;
+}
+main img {
   width: 190px;
   height: 190px;
   border-radius: 190px;
   border: 8px solid #7EB77F;
+}
+main h1 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.8;
+  text-align: center;
+}
+main h1 span {
+  color: #A37774;
+  font-weight: 600;
+}
+main .redes {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+main .redes li {
+  list-style-type: none;
+  margin: 8px;
+}
+main .redes li a {
+  text-decoration: none;
+  color: #FFF7F8;
 }
 
 /*# sourceMappingURL=style.css.map */
