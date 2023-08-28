@@ -1,31 +1,87 @@
-.navbar {
-    background-color: $colorFondo;
-    color: $colorTipografia;
-    height: 60px;
+header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: $colorNavbar;
 
-    .navLogo {
-        img {
-            width: 25px;
-            height: auto;
-        }
+    .abrirMenu, .cerrarMenu {
+        background-color: transparent;
+        border: 0;
+        font-size: 1.25rem;
+        color: $colorTipografia;
     }
 
-    .navItems {
-        a {
-            margin: 15px;
-            color: $colorTipografia;
-            text-decoration: none;
-            
+    .navLogo {
+        width: 3rem;
+        height: auto;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $colorNavbar;
+        padding: 3rem;
+        width: 60%;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        
+        .navList {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            list-style-type: none;
+            gap: 2rem;
+
             li {
-                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    color: $colorTipografia;
+                }
             }
         }
     }
 
-    .navToggle {
-        display: none;
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (min-width:1024px) {
+
+    header {
+        padding: 0.5rem;
+
+        .navLogo {
+            width: 6rem;
+            margin-left: 16px;
+        }
+
+        .abrirMenu, .cerrarMenu {
+            display: none;
+        }
+
+        .nav {
+            opacity: 1;
+            visibility: visible;
+            position: inherit;
+            box-shadow: none;
+            padding: 2rem;
+
+            .navList {
+                flex-direction: row;
+                li{
+                    margin: 8px;
+                }
+            }
+        }
     }
 }

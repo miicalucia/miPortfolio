@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -15,31 +16,81 @@ body {
   color: #FFF7F8;
 }
 
-.navbar {
-  background-color: #27272A;
-  color: #FFF7F8;
-  height: 60px;
+header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #313134;
 }
-.navbar .navLogo img {
-  width: 25px;
+header .abrirMenu, header .cerrarMenu {
+  background-color: transparent;
+  border: 0;
+  font-size: 1.25rem;
+  color: #FFF7F8;
+}
+header .navLogo {
+  width: 3rem;
   height: auto;
 }
-.navbar .navItems a {
-  margin: 15px;
-  color: #FFF7F8;
-  text-decoration: none;
+header .nav {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #313134;
+  padding: 3rem;
+  width: 60%;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
 }
-.navbar .navItems a li {
+header .nav .navList {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
   list-style-type: none;
+  gap: 2rem;
 }
-.navbar .navToggle {
-  display: none;
+header .nav .navList li a {
+  text-decoration: none;
+  color: #FFF7F8;
+}
+header .nav.visible {
+  opacity: 1;
+  visibility: visible;
 }
 
-header img {
+@media (min-width: 1024px) {
+  header {
+    padding: 0.5rem;
+  }
+  header .navLogo {
+    width: 6rem;
+    margin-left: 16px;
+  }
+  header .abrirMenu, header .cerrarMenu {
+    display: none;
+  }
+  header .nav {
+    opacity: 1;
+    visibility: visible;
+    position: inherit;
+    box-shadow: none;
+    padding: 2rem;
+  }
+  header .nav .navList {
+    flex-direction: row;
+  }
+  header .nav .navList li {
+    margin: 8px;
+  }
+}
+.encabezado img {
   width: 190px;
   height: 190px;
   border-radius: 190px;

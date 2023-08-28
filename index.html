@@ -5,53 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Micaela Lucia Gomez</title>
+    <!-- ICONS -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="assets/compo.png" type="image/x-icon">
+    
 </head>
 
 <body>
     <!-- Barra de Navegación -->
 
-    <nav class="navbar">
-        <div class="navLogo"><img src="/assets/compo.png" alt="Laptop con código en su pantalla">MLG</div>
-        <ul class="navItems">
-            <a href="index.html">
-                <li>Inicio</li>
-            </a>
-            <a href="#sobreMi">
-                <li>Sobre mí</li>
-            </a>
-            <a href="#portfolio">
-                <li>Portfolio</li>
-            </a>
-            <a href="#recursos">
-                <li>Recursos</li>
-            </a>
-            <a href="#contacto">
-                <li>Contacto</li>
-            </a>
-        </ul>
-        <div class="navToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+    <header>
+        <img class="navLogo" src="/assets/compo.png" alt="Laptop con código en su pantalla"> <p>MLG</p>
+        <button class="abrirMenu" id="abrir">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+        <nav class="nav" id="nav">
+            <button class="cerrarMenu" id="cerrar">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+            <ul class="navList" id="items">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
 
     <!-- Main o header? con imagen y quien soy -->
-    <header>
+    <div class="encabezado">
         <img src="assets/lau-pal-san.png" alt="mujer pelirroja">
         <h1>¡Hola!
             Mi nombre es Micaela,
             soy Programadora Frontend</h1>
-    </header>
+    </div>
     <!-- Section o main? con aptitudes, habilidades y tecnologías -->
     <!-- Section portfolio -->
     <!-- Aside con recursos -->
     <!-- section con contacto -->
     <!-- Footer - Redes -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
