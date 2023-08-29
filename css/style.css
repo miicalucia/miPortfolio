@@ -231,4 +231,46 @@ main .redes li a {
   color: #FFF7F8;
 }
 
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  height: 100vh;
+}
+.contacto h2 {
+  text-align: center;
+  font-size: 28px;
+  padding: 16px 0px;
+}
+.contacto p {
+  padding: 16px;
+  text-align: center;
+  font-size: 24px;
+}
+.contacto p span {
+  color: #7EB77F;
+  font-weight: 600;
+}
+.contacto .redes {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+}
+.contacto .redes li {
+  list-style-type: none;
+  margin: 8px;
+}
+.contacto .redes li a {
+  text-decoration: none;
+  color: #FFF7F8;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  padding: 8px;
+}
+
 /*# sourceMappingURL=style.css.map */

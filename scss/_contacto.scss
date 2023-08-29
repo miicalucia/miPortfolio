@@ -1,0 +1,39 @@
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: 100vh;   
+
+    h2 {
+        @include h2;
+    }
+
+    p {
+        padding: 16px;
+        text-align: center;
+        font-size: 24px;
+        
+        span {
+            color: $colorDetalles;
+            font-weight: 600;
+        }
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+
+        li {
+            list-style-type: none;
+            margin: 8px;
+
+            a {
+                text-decoration: none;
+                color: $colorTipografia;
+            }
+        }
+    }
+}
