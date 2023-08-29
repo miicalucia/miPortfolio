@@ -22,6 +22,8 @@ header {
   justify-content: space-between;
   padding: 1rem;
   background-color: #313134;
+  position: sticky;
+  top: 0px;
 }
 header .abrirMenu, header .cerrarMenu {
   background-color: transparent;
@@ -47,6 +49,7 @@ header .nav {
   background-color: #313134;
   padding: 3rem;
   width: 60%;
+  height: 100vh;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
 }
 header .nav .navList {
@@ -96,6 +99,8 @@ main {
   align-items: center;
   gap: 40px;
   margin: 8px;
+  padding-top: 65px;
+  height: 90vh;
 }
 main img {
   width: 190px;

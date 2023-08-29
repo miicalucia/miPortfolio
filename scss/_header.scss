@@ -4,6 +4,8 @@ header {
     justify-content: space-between;
     padding: 1rem;
     background-color: $colorNavbar;
+    position: sticky;
+    top: 0px;
 
     .abrirMenu, .cerrarMenu {
         background-color: transparent;
@@ -31,6 +33,7 @@ header {
         background-color: $colorNavbar;
         padding: 3rem;
         width: 60%;
+        height: 100vh;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
         
         .navList {
@@ -39,6 +42,7 @@ header {
             align-items: end;
             list-style-type: none;
             gap: 2rem;
+            
 
             li {
                 a {

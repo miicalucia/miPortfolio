@@ -6,7 +6,6 @@ const cerrar = document.querySelector("#cerrar");
 
 abrir.addEventListener("click", () => {
     nav.classList.add("visible");
-    console.log("abriste el menu")
 })
 
 cerrar.addEventListener("click", () => {
