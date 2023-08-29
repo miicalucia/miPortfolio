@@ -1,0 +1,35 @@
+.recursos {
+    margin-top: 32px;
+
+    h2 {
+        @include h2;
+    }
+
+    p {
+        margin: 8px;
+        padding: 12px;
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    .listadoDeRecursos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 8px;
+
+        li {
+            @include botones;
+            margin: 8px;
+            height: 7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: $colorTipografia;
+            }
+        }
+    }
+}

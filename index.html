@@ -27,11 +27,11 @@
                 <i class="bi bi-x"></i>
             </button>
             <ul class="navList" id="items">
-                <li id="itemsDelMenu"><a href="index.html">Inicio</a></li>
-                <li id="cerrar"><a href="#sobreMi">Sobre mí</a></li>
-                <li id="itemsDelMenu"><a href="#">Portfolio</a></li>
-                <li id="itemsDelMenu"><a href="#">Recursos</a></li>
-                <li id="itemsDelMenu"><a href="#">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#sobreMi">Sobre mí</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -69,26 +69,84 @@
     </main>
 
     <!-- Section o main? con aptitudes, habilidades y tecnologías -->
-    <section>
+    <section class="sobreMi">
         <h2 id="sobreMi">Sobre mí</h2>
         <p>Me adapto con facilidad a los cambios y busco siempre el crecimiento tanto propio, como de los de mi enterno.
-        <br>
-        <span>Aptitudes y habilidades:</span> 
-        Amplia experiencia en atención a clientes, gran habilidad administrativa. Buena
-        trabajadora en equipo.</p>
+            <br>
+            <span>Aptitudes y habilidades:</span>
+            Amplia experiencia en atención a clientes, gran habilidad administrativa. Buena
+            trabajadora en equipo.
+        </p>
 
         <div class="tecnologías">
             <img src="assets/html.svg" alt="logo html">
             <img src="assets/css.svg" alt="logo css">
             <img src="assets/js.svg" alt="logo JavaScript">
-            <img src="assets/reactjs.svg" alt="logo react js">
+            <!-- <img src="assets/reactjs.svg" alt="logo react js"> -->
         </div>
     </section>
-    
+
     <!-- Section portfolio -->
+    <section class="portfolio">
+        <h2 id="portfolio">Portfolio</h2>
+        <ul class="listaProyectos">
+            <li>
+                <a href="index.html">Mi portfolio</a>
+            </li>
+            <li>
+                <a href="https://todolist-proyectojs.netlify.app/">To do list</a>
+            </li>
+            <li>
+                <a href="https://aura-mistica.netlify.app/">Aura Mística</a>
+            </li>
+            <li>
+                <a href="https://javascript-contador.netlify.app/">Contador</a>
+            </li>
+            <li>
+                <a href="https://tarjetas-desplegables.netlify.app/">Tarjetas desplegables</a>
+            </li>
+        </ul>
+    </section>
+
     <!-- Aside con recursos -->
+    <aside class="recursos">
+        <h2 id="recursos">Recursos</h2>
+        <p>Estos son algunos sitios web que han sido de gran ayuda a lo largo de mi formación como Developer.</p>
+        <ul class="listadoDeRecursos">
+            <li><a href="https://developer.mozilla.org/es/" target="_blank">Mozilla developer</a></li>
+            <li><a href="https://eloquentjs-es.thedojo.mx/" target="_blank">Eloquent JS</a></li>
+            <li><a href="https://es.react.dev/" target="_blank">React</a></li>
+            <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Bootstrap</a></li>
+            <li><a href="https://encycolorpedia.es/c02d33" target="_blank">Encycolorpedia</a></li>
+            <li><a href="https://animate.style/" target="_blank">Animate CSS</a></li>
+            <li><a href="https://apvarun.github.io/toastify-js/" target="_blank">Toastify</a></li>
+            <li><a href="https://tinyjpg.com/" target="_blank">Tiny JPG</a></li>
+            <li><a href="https://www.remove.bg/es" target="_blank">Remove bg</a></li>
+        </ul>
+    </aside>
+
     <!-- section con contacto -->
+    <section class="contacto">
+        <h2 id="contacto">Contactame!</h2>
+        <p>Siempre estoy <span>activa</span> en estas redes</p>
+        <ul class="redes">
+            <li>
+                <a href="https://www.linkedin.com/in/micaela-lucia-gomez-800781b8/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDfhSBJvdNsZVxDCxJCdBwSzdqcQMDPfhXDPPcXSncFvSZDdLlkjLqNcTKMlrPWJKJbqSF"
+                    target="_blank">
+                    <i class="bi bi-google"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+    
     <!-- Footer - Redes -->
+    
+
     <script src="js/main.js"></script>
 </body>
 

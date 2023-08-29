@@ -1,0 +1,29 @@
+.portfolio {
+    margin-top: 32px;
+
+    h2 {
+        @include h2;
+    }
+
+    .listaProyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin: 8px;
+        padding: 8px;
+        
+        li {
+            @include botones;
+            padding: 16px;
+            width: 85%;
+            
+            a {
+                font-size: 24px;
+                text-decoration: none;
+                color: $colorTipografia;
+            }
+        }
+    }
+}
