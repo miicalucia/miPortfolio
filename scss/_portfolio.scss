@@ -27,3 +27,32 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+    .portfolio {
+        height: 90vh;
+        margin: 75px 150px;
+
+        h2 {
+            @include h2Desktop;
+            margin: 32px 8px;
+        }
+
+        .listaProyectos {
+            flex-direction: row;
+            margin: 32px 8px;
+
+            li {
+                width: 190px;
+                height: 190px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}

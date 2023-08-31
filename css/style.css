@@ -202,7 +202,7 @@ main .redes li a {
 
 @media (min-width: 1024px) {
   .sobreMi {
-    margin: 32px 150px;
+    margin: 75px 150px;
   }
   .sobreMi h2 {
     font-size: 40px;
@@ -251,6 +251,32 @@ main .redes li a {
   color: #FFF7F8;
 }
 
+@media (min-width: 1024px) {
+  .portfolio {
+    height: 90vh;
+    margin: 75px 150px;
+  }
+  .portfolio h2 {
+    font-size: 40px;
+    text-align: left;
+    padding: 16px;
+    margin: 32px 8px;
+  }
+  .portfolio .listaProyectos {
+    flex-direction: row;
+    margin: 32px 8px;
+  }
+  .portfolio .listaProyectos li {
+    width: 190px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio .listaProyectos li a {
+    font-size: 32px;
+  }
+}
 .recursos {
   margin-top: 32px;
 }
