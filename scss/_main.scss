@@ -7,13 +7,13 @@ main {
     padding-top: 65px;
     height: 90vh;
 
-    img { 
+    img {
         width: 190px;
         height: 190px;
         border-radius: 190px;
         border: 8px solid $colorDetalles;
     }
-    
+
     h1 {
         font-weight: 400;
         font-size: 25px;
@@ -46,9 +46,9 @@ main {
 @media (min-width: 1024px) {
     main {
         display: grid;
-        grid-template-areas: 
-        "presentacion foto"
-        "redes redes";
+        grid-template-areas:
+            "presentacion foto"
+            "redes redes";
         align-content: center;
         justify-content: center;
         padding-top: 8px;
@@ -63,7 +63,7 @@ main {
         h1 {
             grid-area: presentacion;
             font-size: 44px;
-            
+
 
             #saltoDeLinea {
                 display: none;
@@ -79,6 +79,11 @@ main {
 
                 a {
                     font-size: 28px;
+                }
+
+                a:hover {
+                    color: $colorDetalles;
+                    transition: .7s;
                 }
             }
         }

@@ -99,6 +99,11 @@ header .nav.visible {
   header .nav .navList li {
     margin: 8px;
   }
+  header .nav .navList a:hover {
+    font-size: 22px;
+    color: #A37774;
+    transition: 1s;
+  }
 }
 main {
   display: flex;
@@ -167,6 +172,10 @@ main .redes li a {
   }
   main .redes li a {
     font-size: 28px;
+  }
+  main .redes li a:hover {
+    color: #7EB77F;
+    transition: 0.7s;
   }
 }
 .sobreMi {
@@ -276,6 +285,7 @@ main .redes li a {
     align-items: center;
     justify-content: center;
     padding: 8px;
+    border-radius: 16px;
   }
   .portfolio .listaProyectos a:hover {
     color: #27272A;
@@ -336,6 +346,7 @@ main .redes li a {
   .recursos .listadoDeRecursos a {
     font-size: 32px;
     margin: 16px;
+    border-radius: 16px;
   }
   .recursos .listadoDeRecursos a:hover {
     color: #27272A;

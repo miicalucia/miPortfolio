@@ -42,7 +42,6 @@ header {
             align-items: end;
             list-style-type: none;
             gap: 2rem;
-            
 
             li {
                 a {
@@ -92,6 +91,12 @@ header {
 
                 li {
                     margin: 8px;
+                }
+
+                a:hover {
+                    font-size: 22px;
+                    color: $destacados;
+                    transition: 1s;
                 }
             }
         }
