@@ -13,16 +13,18 @@
         gap: 3rem;
         margin: 8px;
         padding: 8px;
-        
-        li {
-            @include botones;
-            padding: 16px;
-            width: 85%;
-            
-            a {
-                font-size: 24px;
-                text-decoration: none;
-                color: $colorTipografia;
+
+
+
+        a {
+            font-size: 24px;
+            text-decoration: none;
+            color: $colorTipografia;
+
+            li {
+                @include botones;
+                padding: 16px;
+                width: 85%;
             }
         }
     }
@@ -31,27 +33,40 @@
 @media (min-width: 1024px) {
     .portfolio {
         height: 90vh;
-        margin: 75px 150px;
 
         h2 {
             @include h2Desktop;
-            margin: 32px 8px;
+            margin: 75px 150px;
         }
 
         .listaProyectos {
             flex-direction: row;
             margin: 32px 8px;
+            gap: 5rem;
 
-            li {
-                width: 190px;
-                height: 190px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            a {
+                font-size: 32px;
 
-                a {
-                    font-size: 32px;
+                li {
+                    width: 200px;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 8px;
                 }
+            }
+
+            a:hover {
+                color: $colorFondo;
+                font-weight: 600;
+
+                li:hover {
+                    background-color: $destacados;
+                    border: 4px solid $colorTipografia;
+                    transition: 0.7s;
+                }
+                
             }
         }
     }

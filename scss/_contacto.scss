@@ -37,3 +37,29 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+
+    .contacto {
+        gap: 54px;
+        
+        h2 {
+            @include h2Desktop;
+        }
+
+        p {
+            font-size: 32px;
+            margin: 24px 8px;
+        }
+
+        .redes {
+            li {
+                a{
+                    font-size: 28px;
+                    margin: 24px 8px;
+                }
+            }
+        }
+    }
+    
+}
