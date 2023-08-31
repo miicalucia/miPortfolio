@@ -30,3 +30,31 @@
         padding: 16px;
     }
 }
+
+
+@media (min-width: 1024px) {
+
+    .sobreMi {
+        margin: 32px 150px;
+        
+
+        h2 {
+            font-size: 40px;
+            text-align: left;
+            padding: 16px;
+        }
+
+        p {
+            font-size: 32px;
+            margin: 24px 8px;
+        }
+
+        .tecnologías {
+            gap: 0;
+
+            img {
+                width: 56px;
+            }
+        }
+    }
+}

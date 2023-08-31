@@ -200,6 +200,26 @@ main .redes li a {
   padding: 16px;
 }
 
+@media (min-width: 1024px) {
+  .sobreMi {
+    margin: 32px 150px;
+  }
+  .sobreMi h2 {
+    font-size: 40px;
+    text-align: left;
+    padding: 16px;
+  }
+  .sobreMi p {
+    font-size: 32px;
+    margin: 24px 8px;
+  }
+  .sobreMi .tecnologías {
+    gap: 0;
+  }
+  .sobreMi .tecnologías img {
+    width: 56px;
+  }
+}
 .portfolio {
   margin-top: 32px;
 }
