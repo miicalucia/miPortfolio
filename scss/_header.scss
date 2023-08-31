@@ -58,15 +58,19 @@ header {
         visibility: visible;
     }
 }
-
+ 
 @media (min-width:1024px) {
 
     header {
         padding: 0.5rem;
+        justify-content: center;
 
         .navLogo {
-            width: 6rem;
-            margin-left: 16px;
+            display: none;
+        }
+
+        p {
+            display: none;
         }
 
         .abrirMenu, .cerrarMenu {
@@ -79,10 +83,14 @@ header {
             position: inherit;
             box-shadow: none;
             padding: 2rem;
+            height: auto;
+            width: auto;
 
             .navList {
                 flex-direction: row;
-                li{
+                gap: 6rem;
+
+                li {
                     margin: 8px;
                 }
             }

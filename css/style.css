@@ -72,10 +72,13 @@ header .nav.visible {
 @media (min-width: 1024px) {
   header {
     padding: 0.5rem;
+    justify-content: center;
   }
   header .navLogo {
-    width: 6rem;
-    margin-left: 16px;
+    display: none;
+  }
+  header p {
+    display: none;
   }
   header .abrirMenu, header .cerrarMenu {
     display: none;
@@ -86,9 +89,12 @@ header .nav.visible {
     position: inherit;
     box-shadow: none;
     padding: 2rem;
+    height: auto;
+    width: auto;
   }
   header .nav .navList {
     flex-direction: row;
+    gap: 6rem;
   }
   header .nav .navList li {
     margin: 8px;
