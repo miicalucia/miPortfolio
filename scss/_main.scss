@@ -42,3 +42,45 @@ main {
         }
     }
 }
+
+@media (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-areas: 
+        "presentacion foto"
+        "redes redes";
+        align-content: center;
+        justify-content: center;
+        padding-top: 8px;
+        grid-gap: 32px 72px;
+
+        img {
+            grid-area: foto;
+            width: 260px;
+            height: 260px;
+        }
+
+        h1 {
+            grid-area: presentacion;
+            font-size: 44px;
+            
+
+            #saltoDeLinea {
+                display: none;
+            }
+        }
+
+        .redes {
+            grid-area: redes;
+            justify-content: flex-start;
+            gap: 27px;
+
+            li {
+
+                a {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}

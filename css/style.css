@@ -88,7 +88,7 @@ header .nav.visible {
     visibility: visible;
     position: inherit;
     box-shadow: none;
-    padding: 2rem;
+    padding: 1rem;
     height: auto;
     width: auto;
   }
@@ -139,6 +139,36 @@ main .redes li a {
   color: #FFF7F8;
 }
 
+@media (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-areas: "presentacion foto" "redes redes";
+    align-content: center;
+    justify-content: center;
+    padding-top: 8px;
+    grid-gap: 32px 72px;
+  }
+  main img {
+    grid-area: foto;
+    width: 260px;
+    height: 260px;
+  }
+  main h1 {
+    grid-area: presentacion;
+    font-size: 44px;
+  }
+  main h1 #saltoDeLinea {
+    display: none;
+  }
+  main .redes {
+    grid-area: redes;
+    justify-content: flex-start;
+    gap: 27px;
+  }
+  main .redes li a {
+    font-size: 28px;
+  }
+}
 .sobreMi {
   margin: 8px;
 }
