@@ -16,7 +16,6 @@ header {
 
     .navLogo {
         width: 3rem;
-        height: auto;
     }
 
     .nav {
@@ -94,9 +93,9 @@ header {
                 }
 
                 a:hover {
-                    font-size: 22px;
+                    
                     color: $destacados;
-                    transition: 1s;
+                    transition: .5s;
                 }
             }
         }

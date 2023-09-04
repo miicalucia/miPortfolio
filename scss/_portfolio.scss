@@ -14,17 +14,15 @@
         margin: 8px;
         padding: 8px;
 
-
-
         a {
             font-size: 24px;
             text-decoration: none;
             color: $colorTipografia;
+            width: 85%;
 
             li {
                 @include botones;
                 padding: 16px;
-                width: 85%;
             }
         }
     }
@@ -32,7 +30,7 @@
 
 @media (min-width: 1024px) {
     .portfolio {
-        height: 90vh;
+        height: 80vh;
 
         h2 {
             @include h2Desktop;
@@ -42,32 +40,30 @@
         .listaProyectos {
             flex-direction: row;
             margin: 32px 8px;
-            gap: 5rem;
+            flex-wrap: nowrap;
 
             a {
                 font-size: 32px;
+                margin: 8px;
+                width: 200px;
 
                 li {
-                    width: 200px;
-                    height: 200px;
+                    min-height: 200px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    padding: 8px;
+                    padding: 16px;
                     border-radius: 16px;
                 }
             }
 
             a:hover {
                 color: $colorFondo;
-                font-weight: 600;
 
                 li:hover {
-                    background-color: $destacados;
-                    border: 4px solid $colorTipografia;
-                    transition: 0.7s;
+                    @include hoverCards;
                 }
-                
+
             }
         }
     }
