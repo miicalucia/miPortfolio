@@ -26,6 +26,10 @@ header {
   position: sticky;
   top: 0px;
 }
+header a {
+  text-decoration: none;
+  color: #FFF7F8;
+}
 header .abrirMenu, header .cerrarMenu {
   background-color: transparent;
   border: 0;
@@ -76,7 +80,7 @@ header .nav.visible {
   header .navLogo {
     display: none;
   }
-  header p {
+  header .mlg {
     display: none;
   }
   header .abrirMenu, header .cerrarMenu {
@@ -175,6 +179,7 @@ main .redes li a {
   }
 }
 .sobreMi {
+  padding-top: 48px;
   margin: 8px;
 }
 .sobreMi h2 {
@@ -226,7 +231,8 @@ main .redes li a {
   }
 }
 .portfolio {
-  margin-top: 32px;
+  padding-top: 48px;
+  margin: 8px;
 }
 .portfolio h2 {
   text-align: center;
@@ -294,7 +300,8 @@ main .redes li a {
   }
 }
 .recursos {
-  margin-top: 32px;
+  padding-top: 48px;
+  margin: 8px;
 }
 .recursos h2 {
   text-align: center;
@@ -303,7 +310,7 @@ main .redes li a {
 }
 .recursos p {
   margin: 8px;
-  padding: 12px;
+  padding: 8px;
   font-size: 18px;
   line-height: 1.8;
   text-align: justify;
@@ -358,6 +365,7 @@ main .redes li a {
   align-items: center;
   gap: 32px;
   height: 100vh;
+  margin: 8px;
 }
 .contacto h2 {
   text-align: center;

@@ -1,5 +1,6 @@
 .recursos {
-    margin-top: 32px;
+    padding-top: 48px;
+    margin: 8px;
 
     h2 {
         @include h2;
@@ -7,7 +8,7 @@
 
     p {
         margin: 8px;
-        padding: 12px;
+        padding: 8px;
         font-size: 18px;
         line-height: 1.8;
         text-align: justify;
