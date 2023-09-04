@@ -32,7 +32,6 @@
 @media (min-width: 1024px) {
     .portfolio {
         height: 80vh;
-        
 
         h2 {
             @include h2Desktop;
